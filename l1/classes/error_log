@@ -1,0 +1,8 @@
+[07-Sep-2026 15:48:00 UTC] PHP Fatal error:  Uncaught Error: Class "RunnerPage" not found in /home/sidiothm/public_html/roboto.ma/l1/classes/addpage.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/sidiothm/public_html/roboto.ma/l1/classes/addpage.php on line 2
+[07-Sep-2026 15:48:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getabspath() in /home/sidiothm/public_html/roboto.ma/l1/classes/runnerpage.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/sidiothm/public_html/roboto.ma/l1/classes/runnerpage.php on line 2

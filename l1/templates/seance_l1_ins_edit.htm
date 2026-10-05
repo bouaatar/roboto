@@ -1,0 +1,498 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel seance_l1_ins edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="seance_l1_ins_view.php?{$editlink}" {$view_page_button_attrs}>{mlang_message VIEW}</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN prenom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prenom}  r-vertical-field" 
+	data-signal-error-for="prenom{$id}" {$required_attr_prenom}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="prenom" data-fieldname="prenom" >
+
+	<label class="r-edit-label control-label {$prenom_label_class}" for="{$labelfor_prenom}">
+		{BEGIN prenom_label}
+			{$prenom_forward_control}
+			{$label seance_l1_ins prenom }			{END prenom_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$prenom_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="prenom" {$tooltipAttr seance_l1_ins prenom } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins prenom }		</div>
+	</div>
+	</div>
+
+
+{END prenom_fieldblock}
+											
+{BEGIN nom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom}  r-vertical-field" 
+	data-signal-error-for="nom{$id}" {$required_attr_nom}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="nom" data-fieldname="nom" >
+
+	<label class="r-edit-label control-label {$nom_label_class}" for="{$labelfor_nom}">
+		{BEGIN nom_label}
+			{$nom_forward_control}
+			{$label seance_l1_ins nom }			{END nom_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nom_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="nom" {$tooltipAttr seance_l1_ins nom } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins nom }		</div>
+	</div>
+	</div>
+
+
+{END nom_fieldblock}
+											
+{BEGIN date_naissance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_naissance}  r-vertical-field" 
+	data-signal-error-for="date_naissance{$id}" {$required_attr_date_naissance}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="date_naissance" data-fieldname="date_naissance" >
+
+	<label class="r-edit-label control-label {$date_naissance_label_class}" for="{$labelfor_date_naissance}">
+		{BEGIN date_naissance_label}
+			{$date_naissance_forward_control}
+			{$label seance_l1_ins date_naissance }			{END date_naissance_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_naissance_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="date_naissance" {$tooltipAttr seance_l1_ins date_naissance } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins date_naissance }		</div>
+	</div>
+	</div>
+
+
+{END date_naissance_fieldblock}
+											
+{BEGIN sexe_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sexe}  r-vertical-field" 
+	data-signal-error-for="sexe{$id}" {$required_attr_sexe}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="sexe" data-fieldname="sexe" >
+
+	<label class="r-edit-label control-label {$sexe_label_class}" for="{$labelfor_sexe}">
+		{BEGIN sexe_label}
+			{$sexe_forward_control}
+			{$label seance_l1_ins sexe }			{END sexe_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sexe_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="sexe" {$tooltipAttr seance_l1_ins sexe } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins sexe }		</div>
+	</div>
+	</div>
+
+
+{END sexe_fieldblock}
+											
+{BEGIN Photo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Photo}  r-vertical-field" 
+	data-signal-error-for="Photo{$id}" {$required_attr_Photo}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="Photo" data-fieldname="Photo" >
+
+	<label class="r-edit-label control-label {$Photo_label_class}" for="{$labelfor_Photo}">
+		{BEGIN Photo_label}
+			{$Photo_forward_control}
+			{$label seance_l1_ins Photo }			{END Photo_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Photo_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="Photo" {$tooltipAttr seance_l1_ins Photo } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins Photo }		</div>
+	</div>
+	</div>
+
+
+{END Photo_fieldblock}
+											
+{BEGIN ecole_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ecole}  r-vertical-field" 
+	data-signal-error-for="ecole{$id}" {$required_attr_ecole}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="ecole" data-fieldname="ecole" >
+
+	<label class="r-edit-label control-label {$ecole_label_class}" for="{$labelfor_ecole}">
+		{BEGIN ecole_label}
+			{$ecole_forward_control}
+			{$label seance_l1_ins ecole }			{END ecole_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ecole_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="ecole" {$tooltipAttr seance_l1_ins ecole } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins ecole }		</div>
+	</div>
+	</div>
+
+
+{END ecole_fieldblock}
+											
+{BEGIN niveau_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_niveau}  r-vertical-field" 
+	data-signal-error-for="niveau{$id}" {$required_attr_niveau}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="niveau" data-fieldname="niveau" >
+
+	<label class="r-edit-label control-label {$niveau_label_class}" for="{$labelfor_niveau}">
+		{BEGIN niveau_label}
+			{$niveau_forward_control}
+			{$label seance_l1_ins niveau }			{END niveau_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$niveau_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="niveau" {$tooltipAttr seance_l1_ins niveau } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins niveau }		</div>
+	</div>
+	</div>
+
+
+{END niveau_fieldblock}
+											
+{BEGIN telephonee_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_telephonee}  r-vertical-field" 
+	data-signal-error-for="telephonee{$id}" {$required_attr_telephonee}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="telephonee" data-fieldname="telephonee" >
+
+	<label class="r-edit-label control-label {$telephonee_label_class}" for="{$labelfor_telephonee}">
+		{BEGIN telephonee_label}
+			{$telephonee_forward_control}
+			{$label seance_l1_ins telephonee }			{END telephonee_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$telephonee_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="telephonee" {$tooltipAttr seance_l1_ins telephonee } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins telephonee }		</div>
+	</div>
+	</div>
+
+
+{END telephonee_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label {$email_label_class}" for="{$labelfor_email}">
+		{BEGIN email_label}
+			{$email_forward_control}
+			{$label seance_l1_ins email }			{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="email" {$tooltipAttr seance_l1_ins email } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins email }		</div>
+	</div>
+	</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN nom_parent_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom_parent}  r-vertical-field" 
+	data-signal-error-for="nom_parent{$id}" {$required_attr_nom_parent}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="nom_parent" data-fieldname="nom_parent" >
+
+	<label class="r-edit-label control-label {$nom_parent_label_class}" for="{$labelfor_nom_parent}">
+		{BEGIN nom_parent_label}
+			{$nom_parent_forward_control}
+			{$label seance_l1_ins nom_parent }			{END nom_parent_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nom_parent_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="nom_parent" {$tooltipAttr seance_l1_ins nom_parent } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins nom_parent }		</div>
+	</div>
+	</div>
+
+
+{END nom_parent_fieldblock}
+											
+{BEGIN cin_parent_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cin_parent}  r-vertical-field" 
+	data-signal-error-for="cin_parent{$id}" {$required_attr_cin_parent}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="cin_parent" data-fieldname="cin_parent" >
+
+	<label class="r-edit-label control-label {$cin_parent_label_class}" for="{$labelfor_cin_parent}">
+		{BEGIN cin_parent_label}
+			{$cin_parent_forward_control}
+			{$label seance_l1_ins cin_parent }			{END cin_parent_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cin_parent_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="cin_parent" {$tooltipAttr seance_l1_ins cin_parent } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins cin_parent }		</div>
+	</div>
+	</div>
+
+
+{END cin_parent_fieldblock}
+											
+{BEGIN lien_parent_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lien_parent}  r-vertical-field" 
+	data-signal-error-for="lien_parent{$id}" {$required_attr_lien_parent}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="lien_parent" data-fieldname="lien_parent" >
+
+	<label class="r-edit-label control-label {$lien_parent_label_class}" for="{$labelfor_lien_parent}">
+		{BEGIN lien_parent_label}
+			{$lien_parent_forward_control}
+			{$label seance_l1_ins lien_parent }			{END lien_parent_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$lien_parent_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="lien_parent" {$tooltipAttr seance_l1_ins lien_parent } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins lien_parent }		</div>
+	</div>
+	</div>
+
+
+{END lien_parent_fieldblock}
+											
+{BEGIN adresse_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse}  r-vertical-field" 
+	data-signal-error-for="adresse{$id}" {$required_attr_adresse}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="adresse" data-fieldname="adresse" >
+
+	<label class="r-edit-label control-label {$adresse_label_class}" for="{$labelfor_adresse}">
+		{BEGIN adresse_label}
+			{$adresse_forward_control}
+			{$label seance_l1_ins adresse }			{END adresse_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$adresse_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="adresse" {$tooltipAttr seance_l1_ins adresse } >
+		<div class="text-muted" >
+		{$tooltip seance_l1_ins adresse }		</div>
+	</div>
+	</div>
+
+
+{END adresse_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							{mlang_message CANCEL}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN reset_button}
+	<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		{mlang_message RESET}		
+		</a>
+	</li>
+{END reset_button}
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="seance_l1_ins_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		{mlang_message VIEW}		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>ROBOTO - Dossier de Présentation Pédagogique (A4)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --accent-light: #eff6ff;
+            --text-color: #334155;
+            --border-color: #cbd5e1;
+            --bg-page: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            background-color: #e2e8f0;
+            line-height: 1.5;
+            font-size: 12.5px;
+        }
+
+        /* A4 Page Container Configuration */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            max-width: 210mm;
+            max-height: 297mm;
+            background: var(--bg-page);
+            margin: 15mm auto;
+            padding: 15mm 18mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            page-break-after: always;
+            overflow: hidden;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Header & Footer */
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+
+        .page-header h2 {
+            font-size: 12.5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .logo-badge {
+            font-weight: 800;
+            font-size: 14px;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+
+        .page-footer {
+            text-align: center;
+            font-size: 9.5px;
+            color: #64748b;
+            border-top: 1px solid var(--border-color);
+            padding-top: 4px;
+            margin-top: 8px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 18px;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 8px;
+        }
+
+        .intro-box {
+            background-color: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 700;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 3px;
+            margin: 8px 0 6px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Grids & Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 8px 10px;
+        }
+
+        .card h4 {
+            font-size: 12px;
+            color: var(--primary);
+            margin-bottom: 3px;
+            font-weight: 700;
+        }
+
+        .card p, .card li {
+            font-size: 11px;
+            color: #475569;
+        }
+
+        ul {
+            margin-left: 15px;
+            margin-bottom: 4px;
+        }
+
+        li {
+            margin-bottom: 2px;
+        }
+
+        /* Specific Elements */
+        .approach-flow {
+            display: flex;
+            justify-content: space-between;
+            background: var(--primary);
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 11px;
+            margin: 6px 0;
+        }
+
+        .level-row {
+            display: flex;
+            align-items: center;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 6px 10px;
+            margin-bottom: 6px;
+        }
+
+        .level-badge {
+            background: var(--accent);
+            color: white;
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 10px;
+            min-width: 85px;
+            text-align: center;
+            margin-right: 10px;
+            line-height: 1.2;
+        }
+
+        .visual-placeholder {
+            border: 2px dashed var(--border-color);
+            background: #f8fafc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            color: #64748b;
+            font-size: 11px;
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div>
+            <div class="page-header">
+                <h2>Page 2 — Qui sommes-nous ?</h2>
+                <span class="logo-badge">ROBOTO</span>
+            </div>
+            <h1>Une expertise indépendante au service des écoles</h1>
+            <p class="subtitle">ROBOTO est un projet éducatif indépendant spécialisé dans les activités STEM, Coding, Robotique et IoT pour les enfants et les jeunes.</p>
+            
+            <div class="intro-box">
+                "L'enfant apprend mieux lorsqu'il peut expérimenter, construire, programmer et voir immédiatement le résultat de son travail."
+            </div>
+
+            <p style="font-size: 11px; margin-bottom: 6px;">Les programmes sont conçus et animés directement par le fondateur de ROBOTO, avec du matériel pédagogique dédié et une approche adaptée à l'âge et au niveau des élèves.</p>
+
+            <div class="section-title">Une expérience basée sur la pratique</div>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Domaines & Matériel</h4>
+                    <ul>
+                        <li>Animation d'activités robotiques</li>
+                        <li>Matériel pédagogique dédié</li>
+                        <li>Arduino et capteurs</li>
+                        <li>Robotique et prototypage</li>
+                        <li>Impression 3D & Électronique</li>
+                        <li>Initiation à l'IoT</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Intervention Directe</h4>
+                    <p><strong>Une intervention dans votre établissement :</strong> ROBOTO apporte le programme, l'expertise pédagogique et, selon le format choisi, le matériel nécessaire aux activités.</p>
+                </div>
+            </div>
+
+            <div class="section-title">Notre approche</div>
+            <div class="approach-flow">
+                <span>Découvrir</span> → <span>Comprendre</span> → <span>Construire</span> → <span>Programmer</span> → <span>Tester</span> → <span>Améliorer</span>
+            </div>
+        </div>
+
+        <div class="visual-placeholder">
+            [VISUEL : Portrait professionnel du fondateur à gauche + Collage de 4 photos (Arduino + capteurs, Robot, Impression 3D, Atelier électronique) à droite]
+        </div>
+        
+        <div class="page-footer">ROBOTO — Dossier Pédagogique & Institutionnel</div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page">
+        <div>
+            <div class="page-header">
+                <h2>Page 3 — Nos Programmes</h2>
+                <span class="logo-badge">ROBOTO</span>
+            </div>
+            <h1>Des parcours technologiques adaptés à chaque niveau</h1>
+            
+            <div class="grid-3" style="margin-top: 8px;">
+                <div class="card">
+                    <h4>01 — CODING</h4>
+                    <p style="font-size:10px; margin-bottom:2px; font-weight:600; color:var(--accent);">Scratch • Scratch Junior • mBlock</p>
+                    <p>Découvrir les algorithmes, la logique et la programmation à travers des jeux, animations et projets créatifs.</p>
+                </div>
+                <div class="card">
+                    <h4>02 — ROBOTIQUE</h4>
+                    <p style="font-size:10px; margin-bottom:2px; font-weight:600; color:var(--accent);">Robots • Moteurs • Capteurs</p>
+                    <p>Construire, programmer et contrôler des robots à travers des activités progressives.</p>
+                </div>
+                <div class="card">
+                    <h4>03 — ARDUINO & ÉLÉC.</h4>
+                    <p style="font-size:10px; margin-bottom:2px; font-weight:600; color:var(--accent);">Arduino • LEDs • Capteurs</p>
+                    <p>Comprendre les bases de l'électronique et transformer une idée en prototype fonctionnel.</p>
+                </div>
+                <div class="card">
+                    <h4>04 — IoT</h4>
+                    <p style="font-size:10px; margin-bottom:2px; font-weight:600; color:var(--accent);">Objets connectés • Capteurs</p>
+                    <p>Découvrir comment les objets peuvent mesurer, communiquer et réagir à leur environnement.</p>
+                </div>
+                <div class="card">
+                    <h4>05 — 3D & MAKER</h4>
+                    <p style="font-size:10px; margin-bottom:2px; font-weight:600; color:var(--accent);">Conception • Impression 3D</p>
+                    <p>Passer d'une idée à un objet réel grâce à la conception et à la fabrication numérique.</p>
+                </div>
+                <div class="card">
+                    <h4>06 — PROJECTS</h4>
+                    <p style="font-size:10px; margin-bottom:2px; font-weight:600; color:var(--accent);">Défis • Projets d'équipe</p>
+                    <p>Mettre les connaissances en pratique à travers des projets concrets et des challenges.</p>
+                </div>
+            </div>
+
+            <div class="visual-placeholder" style="margin-top: 10px; padding: 12px;">
+                <strong style="color: var(--primary);">FROM CODE TO REAL WORLD</strong><br>
+                <span style="font-size: 11.5px; color: var(--accent);">Scratch → mBlock → Robotics → Arduino → IoT → Prototyping</span>
+            </div>
+        </div>
+        <div class="page-footer">ROBOTO — Dossier Pédagogique & Institutionnel</div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page">
+        <div>
+            <div class="page-header">
+                <h2>Page 4 — Un Parcours Progressif</h2>
+                <span class="logo-badge">ROBOTO</span>
+            </div>
+            <h1>Du premier programme au projet connecté</h1>
+            <p class="subtitle" style="margin-bottom: 6px;">Les activités sont organisées progressivement afin de respecter l'âge, le niveau et les capacités des élèves.</p>
+
+            <div class="level-row">
+                <div class="level-badge" style="background:#0ea5e9;">DISCOVERY<br>6–8 ans</div>
+                <div>
+                    <strong style="font-size:11.5px;">Scratch Junior • Logique • Jeux éducatifs • Premières séquences</strong>
+                    <p style="font-size:10.5px;">Objectif : découvrir la logique et le monde numérique.</p>
+                </div>
+            </div>
+            <div class="level-row">
+                <div class="level-badge" style="background:#2563eb;">EXPLORER<br>8–10 ans</div>
+                <div>
+                    <strong style="font-size:11.5px;">Scratch • Algorithmes • Animations • Jeux simples</strong>
+                    <p style="font-size:10.5px;">Objectif : apprendre à programmer en créant.</p>
+                </div>
+            </div>
+            <div class="level-row">
+                <div class="level-badge" style="background:#4f46e5;">CREATOR<br>10–12 ans</div>
+                <div>
+                    <strong style="font-size:11.5px;">Scratch • mBlock • Robotique • Capteurs</strong>
+                    <p style="font-size:10.5px;">Objectif : passer du programme à l'action physique.</p>
+                </div>
+            </div>
+            <div class="level-row">
+                <div class="level-badge" style="background:#7c3aed;">MAKER<br>12–14 ans</div>
+                <div>
+                    <strong style="font-size:11.5px;">Arduino • Électronique • Robotique • Prototypage</strong>
+                    <p style="font-size:10.5px;">Objectif : concevoir et construire des systèmes interactifs.</p>
+                </div>
+            </div>
+            <div class="level-row">
+                <div class="level-badge" style="background:#db2777;">INNOVATOR<br>14–17 ans</div>
+                <div>
+                    <strong style="font-size:11.5px;">IoT • Automatisation • Électronique avancée • Projets</strong>
+                    <p style="font-size:10.5px;">Objectif : développer des prototypes et des projets technologiques.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="font-size: 10px; background:#f8fafc; border: 1px solid var(--border-color); padding: 6px 10px; border-radius: 5px; text-align:center;">
+            <strong>EN PLUS :</strong> 3D PRINTING • MAKER PROJECTS • STEM CHALLENGES (Niveaux adaptables selon le profil des élèves).
+        </div>
+        <div class="page-footer">ROBOTO — Dossier Pédagogique & Institutionnel</div>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="page">
+        <div>
+            <div class="page-header">
+                <h2>Page 5 — Plus qu'un club</h2>
+                <span class="logo-badge">ROBOTO</span>
+            </div>
+            <h1>Une activité pédagogique valorisante</h1>
+            <p class="subtitle" style="margin-bottom: 6px;">ROBOTO ne se limite pas à une succession de cours. Chaque activité devient une expérience visible.</p>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Pour les élèves</h4>
+                    <ul>
+                        <li>Logique & créativité</li>
+                        <li>Résolution de problèmes</li>
+                        <li>Autonomie & travail en équipe</li>
+                        <li>Culture numérique & esprit de projet</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Pour l'établissement</h4>
+                    <ul>
+                        <li>Enrichir les activités parascolaires</li>
+                        <li>Valoriser les projets des élèves</li>
+                        <li>Organiser des challenges & démos</li>
+                        <li>Proposer des activités STEM aux familles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" style="background: var(--accent-light); border-color: #bfdbfe; margin-top: 4px; padding: 6px 10px;">
+                <h4 style="color:var(--accent); font-size: 11.5px; margin-bottom: 2px;">📱 STEM + Digital Content</h4>
+                <p style="font-size: 10.5px; margin-bottom: 2px;">Vos projets deviennent votre contenu (Reels, photos, vidéos courtes, interviews, défis). Ex: <em>"Nos élèves construisent leur premier robot."</em></p>
+                <p style="font-size: 10px; font-style: italic; color: var(--primary);">“Le contenu est produit à partir de l'activité pédagogique — pas à la place de celle-ci.”</p>
+            </div>
+        </div>
+
+        <div class="visual-placeholder">
+            [VISUEL : Split-screen — Gauche : Élève travaillant sur un robot | Droite : Mockup de Reels/Instagram]
+        </div>
+        <div class="page-footer">ROBOTO — Dossier Pédagogique & Institutionnel</div>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="page">
+        <div>
+            <div class="page-header">
+                <h2>Page 6 — Collaborons</h2>
+                <span class="logo-badge">ROBOTO</span>
+            </div>
+            <h1>Des formats flexibles pour votre établissement</h1>
+
+            <div class="grid-3" style="margin-top: 8px;">
+                <div class="card">
+                    <h4>CLUB STEM</h4>
+                    <p>Programme régulier intégré aux activités parascolaires.</p>
+                </div>
+                <div class="card">
+                    <h4>ATELIER</h4>
+                    <p>Session ponctuelle Coding, Robotique, Arduino, IoT, 3D.</p>
+                </div>
+                <div class="card">
+                    <h4>PILOTE</h4>
+                    <p>4 semaines pour évaluer l'expérience avant de poursuivre.</p>
+                </div>
+                <div class="card">
+                    <h4>CHALLENGE</h4>
+                    <p>Robotique, Coding Challenge, STEM Day et démos.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h4>SUR MESURE</h4>
+                    <p>Parcours adapté à l'âge, calendrier, niveau et équipements.</p>
+                </div>
+            </div>
+
+            <div style="background: var(--primary); color: white; padding: 10px; border-radius: 5px; text-align: center; margin-top: 6px;">
+                <h4 style="font-size:12px; margin-bottom:2px; color: #fff;">Prêts à lancer votre club STEM ?</h4>
+                <p style="font-size:10.5px; color:#cbd5e1;">Organisons une présentation ou une démonstration dans votre établissement.</p>
+            </div>
+        </div>
+
+        <div style="font-size: 10.5px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 6px;">
+            <div>
+                <strong>ROBOTO</strong> • STEM • CODING • ROBOTICS • IoT<br>
+                <span style="font-size: 9.5px;">Rabat • Salé • Témara | 🌐 www.roboto.ma/schools | 📱 [Téléphone] | ✉ [Email]</span>
+            </div>
+            <div style="text-align: center; border: 1px solid var(--border-color); padding: 4px 8px; border-radius: 4px; background:#fff;">
+                <strong>[QR CODE]</strong><br><span style="font-size:8.5px;">www.roboto.ma/schools</span>
+            </div>
+        </div>
+        <div class="page-footer">ROBOTO — Dossier Pédagogique & Institutionnel</div>
+    </div>
+
+</body>
+</html>
